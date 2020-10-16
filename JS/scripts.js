@@ -1,3 +1,4 @@
+
 var search = document.getElementById('search')
 submit = document.getElementById('submit')
 mealsEl = document.getElementById('meals')
@@ -25,3 +26,5 @@ $.ajax(settings).done(function (response) {
 
 // Event Listener
 submit.addEventListener('submit', searchMeal)
+
+
