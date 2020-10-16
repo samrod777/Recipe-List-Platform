@@ -7,16 +7,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-    
-
-
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="/css/style.css">
     <title>The Recipes</title>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <div class="flex">
+            <h3>
+                Receipe Generator
+            </h3>
+            <h5>Get a Receipe by searching below</h5>
+            <div class="flex">
+                <form class="flex" id="submit">
+                    <input type="text" id="search" placeholder="Search">
+            </div>
+            <button class="submit" id="getMeals"></button>
+            </form>
+
+        </div>
+        <div id="meal" class="row meal"></div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
     <!-- Start Top Bar -->
     <div class="top-bar">
@@ -24,18 +45,18 @@
             <ul class="menu">
                 <li class="menu-text"></li>
 
-            </ul>   
+            </ul>
         </div>
         <div class="top-bar-right">
             <ul class="menu">
                 <li><a href="/html/calculator.html"><i class="fas fa-calculator"></i>
 
-                  Recipe Cost Calculator</a></li>
-                  <li><a href="/html/receipe.html"><i class="fas fa-utensils"></i>
+                        Recipe Cost Calculator</a></li>
+                <li><a href="/html/receipe.html"><i class="fas fa-utensils"></i>
 
-                    Recipe</a></li>
+                        Recipe</a></li>
                 <li><a href="#">Member? or comment input?</a></li>
-                
+
             </ul>
         </div>
     </div>
