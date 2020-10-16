@@ -1,7 +1,10 @@
 
+  
+
 .hero-search-filter {
-    background: url("https://images.pexels.com/photos/115095/pexels-photo-115095.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
-    height: 300px;
+    background: url("/html/white.jpg") center center no-repeat;
+    margin-top: 5%;
+    height: 600px;
     background-size: cover;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -13,8 +16,6 @@
   
   .hero-search-filter-logo {
     margin-bottom: 2rem;
-    width: 100%;
-    height: 600px;
   }
   
   .hero-search-filter-content {
@@ -23,6 +24,9 @@
     display: flex;
     width: 100%;
     height: 300px;
+    margin-top: 220px;
+    margin-left: 80px;
+  
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -32,6 +36,7 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+      
   }
   
   .hero-search-filter-menu {
@@ -72,8 +77,9 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 90%;
-    background: #fefefe;
+    height: 50px;
+    width: 80%;
+    background-color: rgb(203, 221, 235);
     padding: 0.25rem;
     border-radius: 5px;
     -webkit-align-items: center;
@@ -81,21 +87,23 @@
             align-items: center;
   }
   
-  .hero-search-filter-form .divider {
-    background-color: #cacaca;
-    width: 1px;
-  }
+  
   
   .hero-search-filter-form label {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
-    color: #8a8a8a;
+  
+    color: #301088; 
     font-weight: bold;
+    box-shadow: none;
+    border: 0;
+    
   }
   
   .hero-search-filter-form input,
   .hero-search-filter-form .button {
     margin-bottom: 0;
+    width: 90 %;
   }
   
   @media screen and (max-width: 39.9375em) {
@@ -105,15 +113,47 @@
   }
   
   .hero-search-filter-form-find,
-  .hero-search-filter-form-near {
+  {
     border: 0;
     box-shadow: none;
+    width: 300px;
+   
+    
   }
   
   .hero-search-filter-form-find:focus,
-  .hero-search-filter-form-near:focus {
+   {
     border: 0;
     box-shadow: none;
   }
+  #findtext{
+      width: 100%;
+      border: 0;
+    box-shadow: none;
+    font-size: 30px;
+    background-color: rgb(203, 221, 235);
+  }
+  .button{
+      padding: 14px;
+      background-color: rgb(24, 100, 150);
+      margin-right: 0px;
+  }
+.button:hover{
+    background-color: rgb(89, 138, 230)    ;
+}
+h1{
+  font-family: 'Mystery Quest', cursive;
+  font-size: 70px;
+  margin-left: 30px;
+  color: green  ;
+
+}
+label{
+  font-size: 25px;
+  font-family: 'Mystery Quest', cursive;
+}
+li {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 20px;
   
-  
+}
