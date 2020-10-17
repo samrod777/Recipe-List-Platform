@@ -6,7 +6,7 @@ function searchCocktail() {
         method: 'GET'
     }).then(function (response) {
         console.log(response);
-
+        $("#CocktailPic").empty();
         
         var imgURL = response.drinks[0].strDrinkThumb
         var cocktailImg = $('<img>').attr("src", imgURL)
@@ -72,13 +72,7 @@ function searchCocktail() {
         tRow7.append(qty7, ingredient7);
         tBody7.append(tRow7);
 
-        // var tBodyInst= $("tbody");
-        // var tRowInst = $("<tr>");
-
-        // var  = $("<td>").text(response.drinks[0].strInstructions);
-        // tRowInst.append(instruction);
-        // tBodyInst.append(tRowInst);
-
+        
         var instruction = $("<p>").text("Directions: " + response.drinks[0].strInstructions);
         $("#Recipe").append(instruction);
 
