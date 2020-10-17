@@ -103,7 +103,7 @@
   .hero-search-filter-form input,
   .hero-search-filter-form .button {
     margin-bottom: 0;
-    width: 90 %;
+    width: 90%;
   }
   
   @media screen and (max-width: 39.9375em) {
@@ -112,7 +112,7 @@
     }
   }
   
-  .hero-search-filter-form-find,
+  .hero-search-filter-form-find
   {
     border: 0;
     box-shadow: none;
@@ -121,7 +121,7 @@
     
   }
   
-  .hero-search-filter-form-find:focus,
+  .hero-search-filter-form-find:focus
    {
     border: 0;
     box-shadow: none;
