@@ -4,7 +4,8 @@
 .hero-search-filter {
     background: url("/html/white.jpg") center center no-repeat;
     margin-top: 5%;
-    height: 600px;
+    height: 100%;
+  
     background-size: cover;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -156,4 +157,12 @@ li {
   font-family: 'Mystery Quest', cursive;
   font-size: 20px;
   
+}
+h2 {
+  font-family: 'Mystery Quest', cursive;
+  color:green;
+}
+img{
+  width: 100%;
+  object-fit: contain;
 }
