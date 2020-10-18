@@ -17,11 +17,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <!-- <link rel="stylesheet" href="/css/index.css"> -->
+
   <link rel="stylesheet" href="/style.css">
 
 
-  <title> Food & Drinks</title>
+  <title>Food & Drinks</title>
 </head>
 
 <body>
@@ -42,10 +42,10 @@
         <li><a href="/receipe.html"><i class="fas fa-utensils"></i>Recipe</a></li>
 
 
-        
+        <li><a href="/saicocktails.html"><i class="fas fa-cocktail"></i>Random Cocktail Picker</a></li>
           
-          <li><button id="select-cocktail" class="btn btn-primary my-2 my-sm-0"
-              type="submit"><i class="fas fa-cocktail"></i> Random Cocktail Picker</button></a></li>
+          <!-- <li><button id="select-cocktail" class="btn btn-primary my-2 my-sm-0"
+              type="submit"><i class="fas fa-cocktail"></i> Random Cocktail Picker</button></a></li> -->
 
 
 
@@ -55,65 +55,30 @@
     </div>
   </div>
   <!-- End Top Bar -->
-
-
-
-  <br>
-
-  <h3>Random Cocktail Picker</h3>
-  <header class="hero-search-filter-drink">
+  <h1>The Recipes</h1>
+  <header class="hero-search-filter">
     <div class="hero-search-filter-content">
 
-      <div class="container">
-        <div class="clearfix">
-          <div class="col-6 float-left">
-            <div class="card bg-light text-dark p-2 rem shadow-lg p-3 mb-5 bg-white rounded"
-              style="width: 710; height: 40rem;">
-              <div id="CocktailPic">
-                <h2>Your Cocktail!</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 float-right">
-            <div class="card bg-light text-dark p-2 rem shadow-lg p-3 mb-5 bg-white rounded"
-              style="width: 710; height: 40rem;">
-              <div id="Recipe">
-                <h2>Here is the recipe</h2>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Qty</th>
-                      <th scope="col">Ingredient</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td id="cells"></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+      <form class="hero-search-filter-form" action="">
+        <label for="findtext">Search</label>
+        <input id="findtext" class="hero-search-filter-form-find" type="text">
 
-            </div>
-          </div>
-        </div>
+        <button class="button"><i class="fa fa-search"></i></button>
+      </form>
 
-      </div>
   </header>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
-  
+  <script type="text/javascript" src="cocktails.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   <script src="/scripts.js"></script>
-  <script src="cocktails.js"></script>
+  <script src="/cocktails.js"></script>
   <script>
     $(document).foundation();
   </script>
-
-
 </body>
 
 </html>
