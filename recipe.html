@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- foundation framework css and font awesome links-->
+  <!-- foundation framework and font awesome links -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -15,20 +15,18 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <!-- link to css file -->
   <link rel="stylesheet" href="/Recipe-List-Platform/style.css">
-
-  <title>Foods & Drinks</title>
+  <title> Foods & Drinks</title>
 </head>
 
 <body>
 
-  <!-- Start Top Bar on left and right side -->
+  <!-- Start Top Bar left and right side -->
   <div class="top-bar">
     <div class="top-bar-left">
       <ul class="menu">
-        <li class="menu-text"><i class="fas fa-home"></i></li>
+        <li class="menu-text"><i class="fas fa-utensils"></i></li>
       </ul>
     </div>
-
     <div class="top-bar-right">
       <ul class="menu">
 
@@ -44,22 +42,19 @@
   </div>
   <!-- End Top Bar -->
 
+  <!-- empty div for recipes user input -->
   <h1>Meal Recipes</h1>
+  <div class="grid-container" style="height: 75%;">
+    <header class="hero-search-filter-drink">
+      <div class="hero-search-filter-content">
 
-  <header class="hero-search-filter">
-    <div class="hero-search-filter-content">
-      <!-- label for user input and search button -->
-      <form class="hero-search-filter-form" action="">
-        <label for="findtext">Search</label>
-        <input id="findtext" class="hero-search-filter-form-find" type="text">
-        <button class="button"><i class="fa fa-search"></i></button>
-      </form>
-  </header>
-  <!-- cdn javascript/jquery and foundation framework css sources -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+        <div id="result-heading"></div>
+        <div id="meals" class="meals"></div>
+        <div id="single-meal"></div>
+      </div>
+    </header>
+  </div>
+  <!-- cdn jquery and foundation framework css sources -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   <!-- links to javascript files -->
@@ -69,7 +64,7 @@
     $(document).foundation();
   </script>
 </body>
-<!-- sticky footer  -->
+<!-- sticky footer -->
 <div class="footer">
   <p>Copy right <i class="fas fa-copyright"></i> 2020 All Right Reserved</p>
 </div>

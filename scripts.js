@@ -1,8 +1,5 @@
-
-
-
 var search = document.getElementById('search')
-submit = document.getElementById('submit')
+submit = document.getElementById('select-cocktail')
 mealsEl = document.getElementById('meals')
 var searchterms = $('#getMeals').val();
 
@@ -10,7 +7,7 @@ var searchterms = $('#getMeals').val();
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url":"https://themealdb.p.rapidapi.com/search.php?s=" +searchterms , 
+	"url": "https://themealdb.p.rapidapi.com/search.php?s=" + searchterms,
 	"method": "GET",
 	"datatype": JSON,
 	"headers": {
@@ -20,14 +17,11 @@ var settings = {
 }
 
 
-$(document).ready(function(){
-$.ajax(settings).then(function (response) {
-	console.log(response);
-});
+$(document).ready(function () {
+	$.ajax(settings).then(function (response) {
+		console.log(response);
+	});
 });
 
 // Event Listener
 submit.addEventListener('submit', search)
-	
-
-

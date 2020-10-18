@@ -7,22 +7,27 @@ function searchCocktail() {
     }).then(function (response) {
         console.log(response);
         $("#CocktailPic").empty();
-        
+
         var imgURL = response.drinks[0].strDrinkThumb
-        var cocktailImg = $('<img>').attr("src", imgURL)
         var cocktailName = $("<p class='Cocktail'>").text(response.drinks[0].strDrink);
+        var cocktailImg = $('<img>').attr("src", imgURL)
+
+
 
         $("#CocktailPic").append(cocktailImg);
         $("#CocktailPic").append(cocktailName);
 
-
+        $("tbody").empty()
         var tBody1 = $("tbody");
         var tRow1 = $("<tr>");
-      
+
         var qty1 = $("<td>").text(response.drinks[0].strMeasure1);
         var ingredient1 = $("<td>").text(response.drinks[0].strIngredient1);
         tRow1.append(qty1, ingredient1);
+
         tBody1.append(tRow1);
+
+
 
         var tBody2 = $("tbody");
         var tRow2 = $("<tr>");
@@ -56,7 +61,7 @@ function searchCocktail() {
         tRow5.append(qty5, ingredient5);
         tBody5.append(tRow5);
 
-        var tBody6= $("tbody");
+        var tBody6 = $("tbody");
         var tRow6 = $("<tr>");
 
         var qty6 = $("<td>").text(response.drinks[0].strMeasure6);
@@ -64,7 +69,7 @@ function searchCocktail() {
         tRow6.append(qty6, ingredient6);
         tBody6.append(tRow6);
 
-        var tBody7= $("tbody");
+        var tBody7 = $("tbody");
         var tRow7 = $("<tr>");
 
         var qty7 = $("<td>").text(response.drinks[0].strMeasure7);
@@ -72,14 +77,16 @@ function searchCocktail() {
         tRow7.append(qty7, ingredient7);
         tBody7.append(tRow7);
 
-        
+
         var instruction = $("<p>").text("Directions: " + response.drinks[0].strInstructions);
-        $("#Recipe").append(instruction);
+        $("#Direction").empty()
+
+        $("#Direction").append("<h2>Direction</h2>",instruction);
 
 
-        
+
     })
- 
+
 }
 
 $("#select-cocktail").on("click", function (event) {
