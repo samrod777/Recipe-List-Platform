@@ -1,10 +1,24 @@
 
-  
+ .hero-search-filter-drink{
+  background: url("/white.jpg") center center no-repeat;
+  margin-top: 2%;
+  height: 100%;
+
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+ }
+ 
 
 .hero-search-filter {
-    background: url("/html/white.jpg") center center no-repeat;
-    margin-top: 5%;
-    height: 100%;
+    background: url("/white.jpg") center center no-repeat;
+    margin-top: 2%;
+    height: 70%;
   
     background-size: cover;
     display: -webkit-flex;
@@ -144,10 +158,20 @@
 }
 h1{
   font-family: 'Mystery Quest', cursive;
-  font-size: 70px;
-  margin-left: 30px;
-  color: green  ;
+  font-size: 80px;
+ text-align: center;
+ margin-top: 30px;
+ font-weight: bolder;
+  color: rgb(58, 138, 189)  ;
 
+}
+h3 {
+  font-family: 'Mystery Quest', cursive;
+  font-size: 70px;
+ text-align: center;
+ margin-top: 30px;
+ font-weight: bolder;
+  color: rgb(58, 138, 189)  ;
 }
 label{
   font-size: 25px;
@@ -158,11 +182,28 @@ li {
   font-size: 20px;
   
 }
-h2 {
+h2, th {
   font-family: 'Mystery Quest', cursive;
-  color:green;
+  color: rgb(58, 138, 189) ;
 }
 img{
   width: 100%;
   object-fit: contain;
+}
+
+
+.row {
+  object-position: left;
+  background-color: whitesmoke;
+  padding: 1rem 0 0;
+  border: 1px solid #cacaca;
+  box-shadow: 0 0 4.125rem rgba(0, 0, 0, 0.18);
+  
+  margin-top: 50px;
+  margin-right: 30px;
+  height: 75%;
+}
+.menu-text{
+color: green;
+font-size: 40px;
 }
