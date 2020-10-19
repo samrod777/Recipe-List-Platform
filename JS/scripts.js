@@ -8,7 +8,7 @@ function searchMeal() {
         console.log(response);
         $("#MealPic").empty();
         
-        var imgURL = response.drinks[0].strMealThumb
+        var imgURL = response.meals[0].strMealThumb
         var MealImg = $('<img>').attr("src", imgURL)
         var MealName = $("<p class='Meal'>").text(response.meals[0].strMeal);
 
@@ -27,8 +27,8 @@ function searchMeal() {
         var tBody2 = $("tbody");
         var tRow2 = $("<tr>");
 
-        var qty2 = $("<td>").text(response.drinks[0].strMeasure2);
-        var ingredient2 = $("<td>").text(response.drinks[0].strIngredient2);
+        var qty2 = $("<td>").text(response.meals[0].strMeasure2);
+        var ingredient2 = $("<td>").text(response.meals[0].strIngredient2);
         tRow2.append(qty2, ingredient2);
         tBody2.append(tRow2);
 
@@ -36,7 +36,7 @@ function searchMeal() {
         var tRow3 = $("<tr>");
 
         var qty3 = $("<td>").text(response.meals[0].strMeasure3);
-        var ingredient3 = $("<td>").text(response.drinks[0].strIngredient3);
+        var ingredient3 = $("<td>").text(response.meals[0].strIngredient3);
         tRow3.append(qty3, ingredient3);
         tBody3.append(tRow3);
 
