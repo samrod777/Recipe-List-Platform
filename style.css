@@ -1,5 +1,5 @@
 .hero-search-filter-drink {
-  background: url("/white.jpg") center center no-repeat;
+  background: url("white.jpg") center center no-repeat;
   margin-top: 2%;
   height: 100%;
   padding-left: 20px;
@@ -15,7 +15,7 @@
 
 
 .hero-search-filter {
-  background: url("/white.jpg") center center no-repeat;
+  background: url("white.jpg") center center no-repeat;
   margin-top: 2%;
   height: 75%;
 
