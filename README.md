@@ -6,6 +6,12 @@ a random recipe. Designed to encourage the user to try new recipes.
 
 Live Link:
 
+Deployed application URL: 
+https://samrod777.github.io/Recipe-List-Platform
+
+GitHub repository URL:
+https://github.com/samrod777/Recipe-List-Platform
+
 ### Features
 Project uses two API calls made to MealsDB and Cocktail DB
 Website is interactive by responding to Meal Recipe and Coctail Picker clicks
