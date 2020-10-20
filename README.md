@@ -1,4 +1,4 @@
-## Random Meal and Cocktail Generator
+## Welcome to Meal and Cocktail Picker
 
 ### Overview:
 Use the meal picker and cocktail picker to generate
@@ -24,4 +24,5 @@ Upon search, meal name, image, ingredient list and instructions will display.
 MealsDB API
 Cocktail DB API
 
-
+### Images
+<img width="1688" alt="Screen Shot 2020-10-18 at 2 24 25 PM" src="https://user-images.githubusercontent.com/70172286/96646887-a62f6e80-12e1-11eb-8f99-0a7b17e20192.png">
