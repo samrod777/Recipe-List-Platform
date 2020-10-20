@@ -4,34 +4,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- foundation framework and font awesome -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- link for cdn js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <!-- link for font family "Elilys Candy" -->
   <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+  <!-- link for icon -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <!-- link to css file  -->
   <link rel="stylesheet" href="style.css">
-  <title> Foods & Drinks</title>
+  <title> Foods & Drinks Picker</title>
 </head>
 
 <body>
-  <!-- Start Top Bar left and right side-->
+
+  <!-- Start Top Bar left side-->
   <div class="top-bar">
     <div class="top-bar-left">
       <ul class="menu">
         <li class="menu-text"><i class="fas fa-cocktail"></i></li>
       </ul>
     </div>
+    <!-- Start Top bar for right side -->
     <div class="top-bar-right">
       <ul class="menu">
 
-        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
 
-        <li><a href="cocktail.html" class="fas fa-utensils"></i>Meal Recipe</a></li>
+        <li><a href="recipe.html"><i class="fas fa-utensils"></i> Meal Recipe </a></li>
 
         <li><button id="select-cocktail" class="btn btn-primary my-2 my-sm-0" type="submit"><i
               class="fas fa-cocktail"></i> Cocktail Picker</button></a></li>
@@ -44,11 +48,12 @@
   <br>
 
   <h3>Cocktail Picker</h3>
-  <!-- foundation framework grid responsive -->
-  <div class="grid-container" style="height: 75%;">
-    <header class="hero-search-filter-drink">
 
+  <!-- Foundation framework grid responsive -->
+  <div class="grid-container">
+    <header class="hero-drink">
       <div class="row small-up-1 medium-up-2 large-up-3">
+        <!-- Column 1 for cocktail's picture -->
         <div class="column">
           <div class="callout">
             <div id="CocktailPic">
@@ -56,6 +61,7 @@
             </div>
           </div>
         </div>
+        <!-- Column 2 for recipe -->
         <div class="column">
           <div class="callout">
             <div id="Recipe">
@@ -75,8 +81,8 @@
               </table>
             </div>
           </div>
-
         </div>
+        <!-- Column 3 for direction -->
         <div class="column">
           <div class="callout">
             <div id="Direction">
@@ -95,8 +101,8 @@
   </script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  
   <!-- links to js files -->
-  <script src="scripts.js"></script>
   <script src="cocktails.js"></script>
   <script>
     $(document).foundation();

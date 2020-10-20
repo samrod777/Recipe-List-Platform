@@ -4,37 +4,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- foundation framework and font awesome links -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  
+  <!-- link for cdn js -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  <!-- link for font family "Elilys Candy" -->
   <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+  <!-- link for icon -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <!-- link to css file -->
+    
+  <!-- link to css file  -->
   <link rel="stylesheet" href="style.css">
-  <title> Foods & Drinks</title>
+  <title> Foods & Drinks Picker</title>
 </head>
 
 <body>
 
-  <!-- Start Top Bar left and right side -->
+  <!-- Start Top Bar left side -->
   <div class="top-bar">
     <div class="top-bar-left">
       <ul class="menu">
         <li class="menu-text"><i class="fas fa-utensils"></i></li>
       </ul>
     </div>
+    <!-- start top bar right side -->
     <div class="top-bar-right">
       <ul class="menu">
 
-        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
 
-        <li><a href="recipe.html"><i class="fas fa-utensils"></i>Meal Recipes</a></li>
+        <li><button id="select-meal" class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fas fa-utensils"></i> Meal Picker</button></a></li>
 
-        <li><a href="cocktail.html"><i class="fas fa-cocktail"></i>Cocktail Picker</a>
+       <li><a href="cocktail.html"><i class="fas fa-cocktail"></i> Cocktail Picker</a>
         </li>
 
       </ul>
@@ -42,24 +45,66 @@
   </div>
   <!-- End Top Bar -->
 
-  <!-- empty div for recipes user input -->
-  <h1>Meal Recipes</h1>
-  <div class="grid-container" style="height: 75%;">
-    <header class="hero-search-filter-drink">
-      <div class="hero-search-filter-content">
+  <br>
+  
+  <h3>Meal Recipes</h3>
 
-        <div id="result-heading"></div>
-        <div id="meals" class="meals"></div>
-        <div id="single-meal"></div>
+   <!-- Foundation framework grid responsive -->
+  <div class="grid-container">
+    <header class="hero-drink">
+      <div class="row small-up-1 medium-up-2 large-up-3">
+        <!-- column 1 for meal's picture -->
+        <div class="column">
+          <div class="callout">
+            <div id="MealPic">
+              <h2>  M e a l  </h2>
+            </div>
+          </div>
+        </div>
+        <!-- column 2 for recipe -->
+        <div class="column">
+          <div class="callout">
+            <div id="Recipe">
+              <h2>Ingredients</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"> Qty</th>
+                    <th scope="col"> Ingredients</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="cells"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- column 3 for direction -->
+        <div class="column">
+          <div class="callout">
+            <div id="Direction">
+              <h2>Directions</h2>
+            </div>
+          </div>
+        </div>
       </div>
+
     </header>
   </div>
+
   <!-- cdn jquery and foundation framework css sources -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   <!-- links to javascript files -->
   <script src="scripts.js"></script>
-  <script src="cocktails.js"></script>
+  
   <script>
     $(document).foundation();
   </script>
