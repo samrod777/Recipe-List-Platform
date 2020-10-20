@@ -1,3 +1,5 @@
+
+// Set up function searchMeal and assign API url to variable
 function searchMeal() {
     var queryURL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
@@ -15,7 +17,7 @@ function searchMeal() {
         $("#MealPic").append(MealImg);
         $("#MealPic").append(MealName);
 
-
+        $("tbody").empty()
         var tBody1 = $("tbody");
         var tRow1 = $("<tr>");
       
@@ -72,16 +74,14 @@ function searchMeal() {
         tRow7.append(qty7, ingredient7);
         tBody7.append(tRow7);
 
-        
         var instruction = $("<p>").text("Directions: " + response.meals[0].strInstructions);
-        $("#Recipe").append(instruction);
+        $("#Direction").empty()
 
-
+        $("#Direction").append("<h2>Direction</h2>",instruction);
         
     })
  
 }
-searchMeal()
 
 $("#select-meal").on("click", function (event) {
     searchMeal()
