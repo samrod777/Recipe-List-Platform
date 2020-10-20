@@ -76,7 +76,6 @@ function searchCocktail() {
 
         var instruction = $("<p>").text(response.drinks[0].strInstructions);
         $("#Direction").empty()
-
         $("#Direction").append("<h2>Direction</h2>",instruction);
         
         localStorage.setItem("cocktail", JSON.stringify(response.drinks[0].strDrink))
