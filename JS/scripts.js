@@ -1,5 +1,3 @@
-function searchMeal() {
-    var queryURL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
     $.ajax({
         url: queryURL,
@@ -12,9 +10,9 @@ function searchMeal() {
         var MealImg = $('<img>').attr("src", imgURL)
         var MealName = $("<p class='Meal'>").text(response.meals[0].strMeal);
 
-        $("#MealPic").append(MealImg);
-        $("#MealPic").append(MealName);
 
+// Get Search Term
+const term = search.value;
 
         var tBody1 = $("tbody");
         var tRow1 = $("<tr>");
@@ -72,17 +70,12 @@ function searchMeal() {
         tRow7.append(qty7, ingredient7);
         tBody7.append(tRow7);
 
-        
-        var instruction = $("<p>").text("Directions: " + response.meals[0].strInstructions);
-        $("#Recipe").append(instruction);
-
-
-        
-    })
- 
-}
-
-$("#select-meal").on("click", function (event) {
-    searchMeal()
+$.ajax(settings).done(function (response) {
+	console.log(response);
 });
+
+
+// Event Listener
+submit.addEventListener('submit', searchMeal)
+
 
